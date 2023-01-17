@@ -12,7 +12,7 @@ void main() {
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: [
                   Container(
-                      height: 50,
+                      height: 60,
                       margin: EdgeInsets.all(10),
                       // height: 100,
                       decoration: BoxDecoration(
@@ -27,11 +27,20 @@ void main() {
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
                           Container(
-                            padding: EdgeInsets.all(5),
-                            child: Text("23/05/2022\nFetch milk from market"),
-                            alignment: Alignment.topLeft,
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Container(
+                                  padding: EdgeInsets.all(5),
+                                  child: Text("23/05/2022"),
+                                ),
+                                Container(
+                                  padding: EdgeInsets.all(5),
+                                  child: Text("Fetch milk from market"),
+                                ),
+                              ],
+                            ),
                           ),
-                          
                           Container(
                             padding: EdgeInsets.all(5),
                             child: Text("Monday"),
@@ -40,24 +49,33 @@ void main() {
                         ],
                       )),
                   Container(
-                    height: 50,
-                    margin: EdgeInsets.all(10),
-                    // height: 100,
-                    decoration: BoxDecoration(
-                      color: Colors.blue,
-                      border: Border.all(
-                        color: Colors.green,
-                        width: 2,
+                      height: 60,
+                      margin: EdgeInsets.all(10),
+                      // height: 100,
+                      decoration: BoxDecoration(
+                        color: Colors.blue,
+                        border: Border.all(
+                          color: Colors.green,
+                          width: 2,
+                        ),
+                        borderRadius: BorderRadius.circular(20),
                       ),
-                      borderRadius: BorderRadius.circular(20),
-                    ),
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
                           Container(
-                            padding: EdgeInsets.all(5),
-                            child: Text("24/05/2022\nPay electricity bills"),
-                            alignment: Alignment.topLeft,
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Container(
+                                  padding: EdgeInsets.all(5),
+                                  child: Text("24/05/2022"),
+                                ),
+                                Container(
+                                    padding: EdgeInsets.all(5),
+                                    child: Text("Pay Electricity Bills")),
+                              ],
+                            ),
                           ),
                           Container(
                             padding: EdgeInsets.all(5),
@@ -65,37 +83,44 @@ void main() {
                             alignment: Alignment.topRight,
                           ),
                         ],
-                      )
-                  ),
+                      )),
                   Container(
-                    height: 50,
-                    margin: EdgeInsets.all(10),
-                    // height: 100,
-                    decoration: BoxDecoration(
-                      color: Colors.green,
-                      border: Border.all(
+                      height: 60,
+                      margin: EdgeInsets.all(10),
+                      // height: 100,
+                      decoration: BoxDecoration(
                         color: Colors.green,
-                        width: 2,
+                        border: Border.all(
+                          color: Colors.green,
+                          width: 2,
+                        ),
+                        borderRadius: BorderRadius.circular(20),
                       ),
-                      borderRadius: BorderRadius.circular(20),
-                    ),
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
                           Container(
-                            padding: EdgeInsets.all(5),
-                            child: Text("24/05/2022\nComplete flutter assignment"),
-                            alignment: Alignment.topLeft,
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Container(
+                                  padding: EdgeInsets.all(5),
+                                  child: Text("24/05/2022"),
+                                ),
+                                Container(
+                                  padding: EdgeInsets.all(5),
+                                  child: Text("Complete flutter assignment"),
+                                ),
+                              ],
+                            ),
                           ),
-                          
                           Container(
                             padding: EdgeInsets.all(5),
                             child: Text("Tuesday"),
                             alignment: Alignment.topRight,
                           ),
                         ],
-                      )
-                  )
+                      ))
                 ]),
           ),
         ),
