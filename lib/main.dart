@@ -19,12 +19,12 @@ void main() {
               child: Text("I am red"),
             ),
             Container(
-              width: 40,
+              width: 60,
               color: Colors.blue,
               child: Text("I am blue"),
             ),
             Container(
-              width: 40,
+              width: 60,
               color: Colors.greenAccent,
               child: Text("I am green"),
             )
