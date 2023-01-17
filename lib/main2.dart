@@ -1,6 +1,4 @@
 import 'dart:html';
-import 'dart:js';
-
 import 'package:flutter/material.dart';
 
 void main() {
@@ -9,24 +7,38 @@ void main() {
       home: Scaffold(
         body: SafeArea(
           child: Container(
-            // padding: EdgeInsets.all(20),
+            padding: EdgeInsets.all(2),
             child: Column(
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: [
                   Container(
-                    height: 50,
-                    margin: EdgeInsets.all(10),
-                    // height: 100,
-                    decoration: BoxDecoration(
-                      color: Colors.black,
-                      border: Border.all(
+                      height: 50,
+                      margin: EdgeInsets.all(10),
+                      // height: 100,
+                      decoration: BoxDecoration(
                         color: Colors.green,
-                        width: 2,
+                        border: Border.all(
+                          color: Colors.green,
+                          width: 2,
+                        ),
+                        borderRadius: BorderRadius.circular(20),
                       ),
-                      borderRadius: BorderRadius.circular(20),
-                    ),
-                    child: Center(child: Text("I am red")),
-                  ),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Container(
+                            padding: EdgeInsets.all(5),
+                            child: Text("23/05/2022\nFetch milk from market"),
+                            alignment: Alignment.topLeft,
+                          ),
+                          
+                          Container(
+                            padding: EdgeInsets.all(5),
+                            child: Text("Monday"),
+                            alignment: Alignment.topRight,
+                          ),
+                        ],
+                      )),
                   Container(
                     height: 50,
                     margin: EdgeInsets.all(10),
@@ -39,7 +51,21 @@ void main() {
                       ),
                       borderRadius: BorderRadius.circular(20),
                     ),
-                    child: Center(child: Text("I am blue")),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Container(
+                            padding: EdgeInsets.all(5),
+                            child: Text("24/05/2022\nPay electricity bills"),
+                            alignment: Alignment.topLeft,
+                          ),
+                          Container(
+                            padding: EdgeInsets.all(5),
+                            child: Text("Tuesday"),
+                            alignment: Alignment.topRight,
+                          ),
+                        ],
+                      )
                   ),
                   Container(
                     height: 50,
@@ -53,7 +79,22 @@ void main() {
                       ),
                       borderRadius: BorderRadius.circular(20),
                     ),
-                    child: Center(child: Text("I am green")),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Container(
+                            padding: EdgeInsets.all(5),
+                            child: Text("24/05/2022\nComplete flutter assignment"),
+                            alignment: Alignment.topLeft,
+                          ),
+                          
+                          Container(
+                            padding: EdgeInsets.all(5),
+                            child: Text("Tuesday"),
+                            alignment: Alignment.topRight,
+                          ),
+                        ],
+                      )
                   )
                 ]),
           ),
