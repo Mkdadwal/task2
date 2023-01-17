@@ -14,7 +14,7 @@ void main() {
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
             Container(
-              width: 40,
+              width: 60,
               color: Colors.red,
               child: Text("I am red"),
             ),
