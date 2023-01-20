@@ -29,7 +29,7 @@ class _OuterContainerState extends State<OuterContainer> {
       height: 220,
       width: double.infinity,
       decoration: BoxDecoration(
-        color: Colors.grey,
+        color: Color.fromARGB(255, 219, 209, 209),
         // borderRadius: BorderRadius.circular(20)
       ),
       child: InnerLayout(),
@@ -51,18 +51,18 @@ class InnerLayout extends StatelessWidget {
             Container(
               child: Text(
                 "Sarita \nBlood \nBank",
-                style: TextStyle(fontSize: 35),
+                style: TextStyle(fontSize: 35,color: Colors.white),
               ),
             ),
             Container(
               margin: EdgeInsets.only(top: 10),
               decoration: BoxDecoration(
-                  color: Colors.white,
-                  border: Border.all(color: Colors.green, width: 2),
+                  color: Color.fromARGB(255, 190, 190, 190),
                   borderRadius: BorderRadius.circular(5)),
               child: Icon(
                 Icons.circle,
                 color: Colors.green,
+                size: 20,
               ),
             )
           ],
@@ -72,8 +72,7 @@ class InnerLayout extends StatelessWidget {
         height: 200,
         width: MediaQuery.of(context).size.width / 2.2,
         decoration: BoxDecoration(
-            color: Colors.blueGrey,
-            border: Border.all(color: Colors.black),
+            color: Colors.grey,
             borderRadius: BorderRadius.circular(20)),
       ),
       Container(
@@ -123,13 +122,29 @@ class MyCounterState extends State<MyCounter> {
     return Column(
       children: [
         Container(
-          child: Row(mainAxisAlignment: MainAxisAlignment.center, children: [
-            if(counter>0)ElevatedButton(onPressed: sub, child: Text("-")),
+          padding: EdgeInsets.all(4),
+          height: 40,
+          decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(10),
+            color: Color.fromARGB(255, 145, 144, 144)
+          ),
+          child: Row(mainAxisAlignment: MainAxisAlignment.start, children: [
+            if(counter>0)SizedBox(
+              height: 30,
+              width: 30,
+              child: ElevatedButton(onPressed: sub, child: Center(child: Text("-")),style: ElevatedButton.styleFrom(
+                  backgroundColor: Color.fromARGB(255, 185, 182, 182)),),
+            ),
             Container(
               padding: EdgeInsets.only(left: 10,right: 10),
               child: Text(counter.toString()),
             ),
-            if(counter<10)ElevatedButton(onPressed: add, child: Text("+")),
+            if(counter<10)SizedBox(
+               height: 30,
+              width: 30,
+              child: ElevatedButton(onPressed: add, child: Text("+"),style: ElevatedButton.styleFrom(
+                  backgroundColor: Color.fromARGB(255, 185, 182, 182)),),
+            ),
             
           ]),
         ),
