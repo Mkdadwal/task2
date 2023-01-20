@@ -18,7 +18,7 @@ void main() {
                       decoration: BoxDecoration(
                         color: Colors.green,
                         border: Border.all(
-                          color: Colors.green,
+                          color: Colors.yellow,
                           width: 2,
                         ),
                         borderRadius: BorderRadius.circular(20),
@@ -53,9 +53,9 @@ void main() {
                       margin: EdgeInsets.all(10),
                       // height: 100,
                       decoration: BoxDecoration(
-                        color: Colors.blue,
+                        color: Colors.green,
                         border: Border.all(
-                          color: Colors.green,
+                          color: Colors.yellow,
                           width: 2,
                         ),
                         borderRadius: BorderRadius.circular(20),
@@ -91,7 +91,7 @@ void main() {
                       decoration: BoxDecoration(
                         color: Colors.green,
                         border: Border.all(
-                          color: Colors.green,
+                          color: Colors.yellow,
                           width: 2,
                         ),
                         borderRadius: BorderRadius.circular(20),
