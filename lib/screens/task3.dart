@@ -133,6 +133,11 @@ class MyCounterState extends State<MyCounter> {
               child: ElevatedButton(onPressed: sub, child: Center(child: Text("-")),style: ElevatedButton.styleFrom(
                   backgroundColor: Color.fromARGB(255, 185, 182, 182)),),
             ),
+            if(counter==0)SizedBox(
+              height: 30,
+              width: 30,
+              child: Container(),
+            ),
             Container(
               padding: EdgeInsets.only(left: 10,right: 10),
               child: Text(counter.toString()),
@@ -142,6 +147,11 @@ class MyCounterState extends State<MyCounter> {
               width: 30,
               child: ElevatedButton(onPressed: add, child: Text("+"),style: ElevatedButton.styleFrom(
                   backgroundColor: Color.fromARGB(255, 185, 182, 182)),),
+            ),
+            if(counter==10)SizedBox(
+               height: 30,
+              width: 25,
+              child: Container(),
             ),
             
           ]),
