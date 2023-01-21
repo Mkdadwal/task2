@@ -14,14 +14,9 @@ void main() {
   ));
 }
 
-class OuterContainer extends StatefulWidget {
+class OuterContainer extends StatelessWidget {
   // const OuterContainer({super.key});
 
-  @override
-  State<OuterContainer> createState() => _OuterContainerState();
-}
-
-class _OuterContainerState extends State<OuterContainer> {
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -79,6 +74,7 @@ class InnerLayout extends StatelessWidget {
         margin: EdgeInsets.only(top: 40, left: 5),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.start,
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Container(
               margin: EdgeInsets.only(bottom: 5),
@@ -120,15 +116,17 @@ class MyCounterState extends State<MyCounter> {
   @override
   Widget build(BuildContext context) {
     return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Container(
           padding: EdgeInsets.all(4),
           height: 40,
+          width: MediaQuery.of(context).size.width/6,
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(10),
             color: Color.fromARGB(255, 145, 144, 144)
           ),
-          child: Row(mainAxisAlignment: MainAxisAlignment.start, children: [
+          child: Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
             if(counter>0)SizedBox(
               height: 30,
               width: 30,
@@ -149,7 +147,7 @@ class MyCounterState extends State<MyCounter> {
           ]),
         ),
         if(counter==10)Container(
-          margin: EdgeInsets.only(top: 20),
+          margin: EdgeInsets.only(top: 10),
           child: Text("You have reached maximum unit limit",style: TextStyle(fontSize: 10),),
           decoration: BoxDecoration(
             color: Colors.red
