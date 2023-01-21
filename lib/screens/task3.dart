@@ -1,5 +1,4 @@
 import 'dart:developer';
-
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -130,7 +129,7 @@ class MyCounterState extends State<MyCounter> {
             if(counter>0)SizedBox(
               height: 30,
               width: 30,
-              child: ElevatedButton(onPressed: sub, child: Center(child: Text("-")),style: ElevatedButton.styleFrom(
+              child: ElevatedButton(onPressed: sub, child: Text("-"),style: ElevatedButton.styleFrom(
                   backgroundColor: Color.fromARGB(255, 185, 182, 182)),),
             ),
             if(counter==0)SizedBox(
@@ -149,7 +148,7 @@ class MyCounterState extends State<MyCounter> {
             ),
             if(counter==9)SizedBox(
                height: 30,
-              width: 25,
+              width: 30,
             ),
             
           ]),
