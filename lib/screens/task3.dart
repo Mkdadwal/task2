@@ -136,27 +136,25 @@ class MyCounterState extends State<MyCounter> {
             if(counter==0)SizedBox(
               height: 30,
               width: 30,
-              child: Container(),
             ),
             Container(
               padding: EdgeInsets.only(left: 10,right: 10),
               child: Text(counter.toString()),
             ),
-            if(counter<10)SizedBox(
+            if(counter<9)SizedBox(
                height: 30,
               width: 30,
               child: ElevatedButton(onPressed: add, child: Text("+"),style: ElevatedButton.styleFrom(
                   backgroundColor: Color.fromARGB(255, 185, 182, 182)),),
             ),
-            if(counter==10)SizedBox(
+            if(counter==9)SizedBox(
                height: 30,
               width: 25,
-              child: Container(),
             ),
             
           ]),
         ),
-        if(counter==10)Container(
+        if(counter==9)Container(
           margin: EdgeInsets.only(top: 10),
           child: Text("You have reached maximum unit limit",style: TextStyle(fontSize: 10),),
           decoration: BoxDecoration(
