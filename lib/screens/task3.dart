@@ -121,7 +121,7 @@ class MyCounterState extends State<MyCounter> {
         Container(
           padding: EdgeInsets.all(4),
           height: 40,
-          width: MediaQuery.of(context).size.width/6,
+          width: 100,
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(10),
             color: Color.fromARGB(255, 145, 144, 144)
